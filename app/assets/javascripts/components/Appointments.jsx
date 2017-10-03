@@ -25,7 +25,7 @@ var Appointments = React.createClass({
   addAppointment: function(json) {
     this.state.appointments.push(json);
 
-    this.state.appointments.sort(function(a, b) {
+    appointments = this.state.appointments.sort(function(a, b) {
       return new Date(a.appt_time) - new Date(b.appt_time)
     });
 
